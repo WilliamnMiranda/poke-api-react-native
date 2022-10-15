@@ -71,11 +71,11 @@ const ProfileScreen = ({ navigation, route }) => {
           {
             pokemon.stats.map((item, index) => {
               return (
-                <Status>
+                <Status key={index}>
                   <NameStatus>{NamesStats[index]}</NameStatus>
                   <Value>{item.base_stat}</Value>
                   <Progress>
-                    <StatusProgress tam={`${item.base_stat}%`} color={item.base_stat} />
+                    <StatusProgress tam={`${item.base_stat}`} color={item.base_stat} />
                   </Progress>
                 </Status>
               )

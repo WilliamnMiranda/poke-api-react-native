@@ -37,7 +37,8 @@ export const Image = styled.Image`
 export const Identification = styled.View`
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 0px 15px;
 `
@@ -49,7 +50,7 @@ export const Name = styled.Text`
 `
 
 export const Id = styled.Text`
- 
+color: black;
 `
 
 export const  Header = styled.View`
@@ -86,7 +87,7 @@ export const Progress = styled.View`
 `
 export const StatusProgress = styled.View`
     height: 2px;
-    width: ${({tam}) => tam};
+    width: ${({tam}) => `${tam}%`};
     background-color: ${({color})=> color > 50 ? '#6aea6a' : '#ff261b' };
 `
 export const Value = styled.Text`

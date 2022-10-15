@@ -59,7 +59,7 @@ const HomeScreen = ({ navigation }) => {
             </ButtonFilterByName>
           </FilterInput>
           <FilterTypeAndFavorites>
-            <TouchableOpacity onPress={()=> setPokemonsFilter('')}>
+            <TouchableOpacity onPress={() => setPokemonsFilter('')}>
               <TextIcon> <AntDesign name="home" color='white' size={23} /> Inicio </TextIcon>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => setFilterByType(!filterByType)}>
