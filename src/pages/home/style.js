@@ -72,7 +72,7 @@ export const FilterTypeAndFavorites = styled.View`
     height: 53px;
     width: 100%;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 15px;
     box-sizing: border-box;
