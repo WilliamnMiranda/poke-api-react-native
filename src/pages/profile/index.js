@@ -28,6 +28,7 @@ const ProfileScreen = ({ navigation, route }) => {
   const { pokemon, colorType } = route.params
   const [formatId, setFormatId] = React.useState('')
   const NamesStats = ['hp', 'Attack', 'Defense', 'Sp.Atk', 'Sp.Def', 'Speed']
+  const { color } = route.params
   const formatNumber = (id) => {
     if (pokemon.id < 10)
       setFormatId(`#00${pokemon.id}`)
@@ -40,7 +41,7 @@ const ProfileScreen = ({ navigation, route }) => {
     formatNumber()
   }, [])
   return (
-    <Container color={colorType}>
+    <Container color={colorType} colorFilter={color}>
       <Figure />
       <Header>
         <Back>

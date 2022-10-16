@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.View`
     flex: 1;
-    background-color: ${({color})=> color};
+    background-color: ${({color,colorFilter})=> colorFilter ? colorFilter : color};
 `
 export const Figure = styled.View`
     width: 200px;
