@@ -33,6 +33,7 @@ const HomeScreen = ({ navigation }) => {
       return
     }
     const pokemons = await pokemonServices.getByIdOrName(filterByNameOrId)
+    setFilterByNameOrId('')
     setPokemonsFilter([pokemons])
   }
 
